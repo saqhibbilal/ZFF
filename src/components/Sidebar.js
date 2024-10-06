@@ -24,27 +24,43 @@ const Sidebar = () => {
       </div>
       <ul>
         <li>
-          <NavLink to="/plans" activeClassName="active">
+          <NavLink
+            to="/plans" // This will be active for /plans and /plans/select-item
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             <FaClipboardList className="icon" /> <span>Plans</span>
           </NavLink>
         </li>
+
         <li>
-          <NavLink to="/items" activeClassName="active">
+          <NavLink
+            to="/items"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             <FaBox className="icon" /> <span>Items</span>
           </NavLink>
         </li>
         <li>
-          <NavLink to="/delivery" activeClassName="active">
+          <NavLink
+            to="/delivery"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             <FaTruck className="icon" /> <span>Delivery</span>
           </NavLink>
         </li>
         <li>
-          <NavLink to="/orders" activeClassName="active">
+          <NavLink
+            to="/orders"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             <FaShoppingCart className="icon" /> <span>Orders</span>
           </NavLink>
         </li>
         <li>
-          <NavLink to="/users" activeClassName="active">
+          <NavLink
+            to="/users"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             <FaUsers className="icon" /> <span>Users</span>
           </NavLink>
         </li>

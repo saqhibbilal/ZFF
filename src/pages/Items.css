@@ -1,0 +1,22 @@
+.items-page {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  
+  .item {
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .item img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .item h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
